@@ -145,7 +145,7 @@ class RobotsTxtParser
      */
     private function prepareRules()
     {
-        $rows = explode(PHP_EOL, $this->content);
+        $rows = explode("\n", $this->content);
 
         foreach ($rows as $row) {
             $row = preg_replace('/#.*/', '', $row);
